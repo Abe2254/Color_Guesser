@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  color: #19084e;
+}
+
+body {
+  background-color: #9873fe;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  flex-direction: column;
+}
+
+.hide {
+  display: none;
+}
+
+
+.start-screen {
+  text-align: center;
+}
+
+.start-screen h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+#start-button,
+#restart {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background-color: #45a049;
+  color: white;
+  border: none;
+
+  cursor: pointer;
+  border-radius: 2em;
+  box-shadow: 0 1em 3em rgba(37, 22, 80, 0.3);
+}
+
+#start-button:hover {
+  background-color: #267a2b;
+}
+
+/* Quiz Container */
+#display-container {
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.timer {
+  font-weight: bold;
+}
+
+
+.question-color {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 20px;
+  border:0px solid #000;
+  border-radius: 10px;
+}
+
+/* Button Container */
+.button-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.option-div {
+  width: 100%;
+  height: 60px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.option-div:hover {
+  opacity: 0.8;
+}
+
+.correct {
+  border: 4px solid green;
+}
+
+.incorrect {
+  border: 4px solid red;
+}
+
+/* Next Button */
+#next-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#next-button:hover {
+  background-color: #0056b3;
+}
+
+/* Score Container */
+.score-container {
+    color: antiquewhite;
+  text-align: center;
+}
+
+#user-score {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+#restart {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#restart:hover {
+  background-color: #e64a19;
+}
+
+/* Leaderboard */
+#leaderboard {
+  margin-top: 20px;
+  text-align: center;
+ 
+}
+
+#leaderboard h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+   
+}
+
+#leaderboard p {
+  font-size: 1.2rem;
+  margin: 5px 0;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Quiz Game</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="start-screen">
+    <h1>Color Quiz Game</h1>
+    <button id="start-button" data-testid="start-button">Start Quiz</button>
+  </div>
+
+  <div id="display-container" class="hide" data-testid="colorBox">
+    <div class="header">
+      <div class="number-of-questions" data-testid="question-number">
+        <span>1 of 5 Question</span>
+      </div>
+      <div class="timer" data-testid="timer">
+        <span>Time Left: 10s</span>
+      </div>
+    </div>
+
+    <div id="container" data-testid="colorOption"></div>
+
+    <button id="next-button" class="hide" data-testid="next-button">Next</button>
+  </div>
+
+  <div class="score-container hide" data-testid="score-container">
+    <div id="user-score" data-testid="score"></div>
+    <button id="restart" data-testid="newGameButton">New Game</button>
+  </div>
+
+  <div id="leaderboard" data-testid="leaderboard"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
