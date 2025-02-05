@@ -35,7 +35,7 @@ const colorGenerator = () => {
   return color;
 };
 
-//  Timer Function
+//  Timer 
 const timerDisplay = () => {
   clearInterval(countdown);
   countdown = setInterval(() => {
@@ -54,10 +54,10 @@ function populateQuiz() {
 
   for (let i = 0; i < 5; i++) {
     // Generate 5 random questions
-    let correctColor = colorGenerator(); // Generate a random correct color
+    let correctColor = colorGenerator(); 
     let options = new Set([correctColor]);
 
-    // Generate 3 more random colors (ensuring uniqueness)
+   
     while (options.size < 4) {
       options.add(colorGenerator());
     }
@@ -69,7 +69,7 @@ function populateQuiz() {
   }
 }
 
-// Create Quiz UI
+// Create Quiz 
 function quizCreator() {
   quizContainer.innerHTML = '';
   quizArray.forEach((question, index) => {
@@ -94,7 +94,7 @@ function quizCreator() {
   });
 }
 
-//  Display Quiz
+//  Display 
 const quizDisplay = (questionCount) => {
   let quizCards = document.querySelectorAll('.container-mid');
   quizCards.forEach((card) => card.classList.add('hide'));
@@ -147,7 +147,7 @@ function displayNext() {
   }
 }
 
-//  Update High Score & Leaderboard
+//  High Score & Leaderboard
 function updateHighScore() {
   if (scoreCount > highScore) {
     highScore = scoreCount;
@@ -160,7 +160,7 @@ function updateHighScore() {
   displayLeaderboard();
 }
 
-// Display Leaderboard
+//  Leaderboard
 function displayLeaderboard() {
   leaderboardContainer.innerHTML = '<h3>Leaderboard</h3>';
   leaderboard.forEach((score, index) => {
